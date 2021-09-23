@@ -1,0 +1,14 @@
+import { useMutation } from '@apollo/client';
+import { useCallback } from 'react';
+
+import {{ upperSnakeCase mutationName }} from '$/graphql/mutations/{{ entityName }}/{{ mutationName }}';
+
+export default function use{{ properCase entityName }}Actions() {
+  const [perform{{ properCase actionName }}] = useMutation({{ upperSnakeCase mutationName }});
+
+  const {{ actionName }}{{ properCase entityName }} = useCallback(async () => {
+    await perform{{ properCase actionName }}();
+  }, [perform{{ properCase actionName }}]);
+
+  return { {{ actionName }}{{ properCase entityName }} };
+}

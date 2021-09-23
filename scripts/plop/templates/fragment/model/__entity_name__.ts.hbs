@@ -1,0 +1,10 @@
+import type { {{ properCase entityName }}Fragment } from '$/graphql/generated';
+import type { WithoutNulls } from '$/utils/withoutNulls';
+
+export default function normalize{{ properCase entityName }}(input: WithoutNulls<{{ properCase entityName }}Fragment>) {
+  return {
+    id: input.id,
+  } as const;
+}
+
+export type {{ properCase entityName }} = ReturnType<typeof normalize{{ properCase entityName }}>;

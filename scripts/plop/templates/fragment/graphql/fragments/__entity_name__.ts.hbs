@@ -1,0 +1,11 @@
+import { gql, TypedDocumentNode } from '@apollo/client';
+
+import type { {{ properCase entityName }}Fragment } from '$/graphql/generated';
+
+const {{ upperSnakeCase entityName }}_FRAGMENT: TypedDocumentNode<{{ properCase entityName }}Fragment> = gql`
+  fragment {{ properCase entityName }} on {{ properCase entityName }}Type {
+    id
+  }
+`;
+
+export default {{ upperSnakeCase entityName }}_FRAGMENT;

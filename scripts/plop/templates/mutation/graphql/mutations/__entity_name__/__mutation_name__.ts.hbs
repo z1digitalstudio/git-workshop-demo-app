@@ -1,0 +1,11 @@
+import { gql, TypedDocumentNode } from '@apollo/client';
+
+import type { {{ properCase mutationName }}Mutation, {{ properCase mutationName }}MutationVariables } from '$/graphql/generated';
+
+const {{ upperSnakeCase mutationName }}: TypedDocumentNode<{{ properCase mutationName }}Mutation, {{ properCase mutationName }}MutationVariables> = gql`
+  mutation {{ properCase mutationName }} {
+    {{ mutationName }}
+  }
+`;
+
+export default {{ upperSnakeCase mutationName }};

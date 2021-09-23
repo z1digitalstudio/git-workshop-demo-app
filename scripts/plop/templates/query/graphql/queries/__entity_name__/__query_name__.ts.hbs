@@ -1,0 +1,13 @@
+import { gql, TypedDocumentNode } from '@apollo/client';
+
+import type { {{ properCase queryName }}Query, {{ properCase queryName }}QueryVariables } from '$/graphql/generated';
+
+const {{ upperSnakeCase queryName }}: TypedDocumentNode<{{ properCase queryName }}Query, {{ properCase queryName }}QueryVariables> = gql`
+  query {{ properCase queryName }} {
+    {{ lowerCase queryNameWithoutGet }} {
+      id
+    }
+  }
+`;
+
+export default {{ upperSnakeCase queryName }};

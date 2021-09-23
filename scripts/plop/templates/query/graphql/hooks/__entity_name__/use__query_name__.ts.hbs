@@ -1,0 +1,17 @@
+import { useQuery } from '@apollo/client';
+import { useMemo } from 'react';
+
+import {{ upperSnakeCase queryName }} from '$/graphql/queries/{{ entityName }}/{{ queryName }}';
+import normalize{{ properCase entityName }} from '$/model/{{ properCase entityName }}';
+import { withoutNulls } from '$/utils/withoutNulls';
+
+export default function use{{ properCase queryNameWithoutGet }}() {
+  const { data: raw } = useQuery({{ upperSnakeCase queryName }});
+
+  const normalized = useMemo(() => {
+    const data = withoutNulls(raw?.{{ lowerCase queryNameWithoutGet }});
+    return data && normalize{{ properCase entityName }}(data);
+  }, [raw]);
+
+  return { data: normalized };
+}

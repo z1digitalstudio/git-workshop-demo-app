@@ -1,0 +1,16 @@
+import type { NextPage } from 'next';
+import Head from 'next/head';
+
+import {{ properCase name }}View from '$/{{ containerPath }}';
+import pageTitle from '$/utils/pageTitle';
+
+const {{ properCase name }}Page: NextPage = () => (
+  <>
+    <Head>
+      <title>{pageTitle('{{ name }}')}</title>
+    </Head>
+    <{{ properCase name }}View />
+  </>
+);
+
+export default {{ properCase name }}Page;
