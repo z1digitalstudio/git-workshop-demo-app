@@ -21,7 +21,7 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h2`
-  margin-block-start: 0;
+  margin-block-start: 0.5rem;
   font-size: 1.3rem;
   letter-spacing: 0.3px;
   font-weight: ${({ theme }) => theme.weights.semiBold};
