@@ -1,0 +1,54 @@
+{
+  "name": "vime-web",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Z1 Digital Studio <hola@z1.digital>",
+  "license": "SEE LICENSE IN LICENSE",
+  "private": true,
+  "scripts": {
+    "build": "next build && next export",
+    "gen": "plop --plopfile scripts/plop/plopfile.js",
+    "install-git-hooks": "./scripts/git-hooks/install.sh",
+    "lint": "eslint --ext .js,.jsx,.mjs,.ts,.tsx src .*.js --ignore-pattern '!.*.js' --max-warnings=0",
+    "lint:fix": "yarn lint --fix",
+    "postinstall": "yarn install-git-hooks",
+    "preinstall": "node .nonpm.js",
+    "start": "next dev"
+  },
+  "dependencies": {
+    "$": "link:./src",
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.1",
+    "styled-normalize": "^8.0.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@types/node": "^16.9.6",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "@types/styled-components": "^5.1.14",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "@z1digitalstudio/eslint-config-imports": "^1.0.0",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-styled-components": "npm:@z1digitalstudio/babel-plugin-styled-components@1.13.2-rev.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3",
+    "utility-types": "^3.10.0"
+  },
+  "engines": {
+    "node": ">=14.17.0"
+  }
+}
