@@ -13,6 +13,7 @@ export default function HomeView(): JSX.Element {
           key={movie.id}
           image={movie.image}
           name={movie.name}
+          tags={movie.tags}
         />
       ))}
     </Container>

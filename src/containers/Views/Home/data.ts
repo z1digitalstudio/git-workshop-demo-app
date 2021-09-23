@@ -5,6 +5,7 @@ export const movies = [
     id: '1',
     image: '/movies/arrival.jpg',
     name: 'Arrival',
+    tags: ['Drama', 'Sci-Fi'],
   },
   {
     director: 'Rian Johnson',
@@ -12,6 +13,7 @@ export const movies = [
     id: '2',
     image: '/movies/knives-out.jpg',
     name: 'Knives Out',
+    tags: ['Comedy', 'Crime', 'Drama'],
   },
   {
     director: 'Christopher Nolan',
@@ -19,6 +21,7 @@ export const movies = [
     id: '3',
     image: '/movies/memento.jpg',
     name: 'Memento',
+    tags: ['Mistery', 'Thriller'],
   },
   {
     director: 'Edgar Wright',
@@ -26,6 +29,7 @@ export const movies = [
     id: '4',
     image: '/movies/baby-driver.jpg',
     name: 'Baby Driver',
+    tags: ['Action', 'Crime', 'Drama'],
   },
   {
     director: 'Greta Gerwig',
@@ -33,6 +37,7 @@ export const movies = [
     id: '5',
     image: '/movies/lady-bird.jpg',
     name: 'Lady Bird',
+    tags: ['Comedy', 'Drama'],
   },
   {
     director: 'Wes Anderson',
@@ -40,6 +45,7 @@ export const movies = [
     id: '6',
     image: '/movies/grand-budapest-hotel.jpg',
     name: 'The Grand Budapest Hotel',
+    tags: ['Adventure', 'Comedy', 'Crime'],
   },
   {
     director: 'Kenneth Lonergan',
@@ -47,6 +53,7 @@ export const movies = [
     id: '7',
     image: '/movies/manchester-by-the-sea.jpg',
     name: 'Manchester by the Sea',
+    tags: ['Drama'],
   },
   {
     director: 'Damien Chazelle',
@@ -54,6 +61,7 @@ export const movies = [
     id: '8',
     image: '/movies/whiplash.jpg',
     name: 'Whiplash',
+    tags: ['Drama', 'Music'],
   },
   {
     director: 'Martin McDonagh',
@@ -61,5 +69,6 @@ export const movies = [
     id: '9',
     image: '/movies/three-billboards-outside-ebbing-missouri.jpg',
     name: 'Three Billboards Outside Ebbing, Missouri',
+    tags: ['Comedy', 'Crime', 'Drama'],
   },
 ];

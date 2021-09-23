@@ -3,4 +3,5 @@ export type Props = {
   directorImage: string;
   image: string;
   name: string;
+  tags: string[];
 };
