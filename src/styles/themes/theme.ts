@@ -1,7 +1,7 @@
 const theme = {
   colors: {
     black: '#000000',
-    grey50: '#F9F9FA',
+    grey300: '#E0E0E0',
   },
   weights: {
     light: 300,
