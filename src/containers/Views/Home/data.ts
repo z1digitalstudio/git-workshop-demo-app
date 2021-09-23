@@ -5,7 +5,7 @@ export const movies = [
     id: '1',
     image: '/movies/arrival.jpg',
     name: 'Arrival',
-    tags: ['Drama', 'Sci-Fi'],
+    tags: ['Drama', 'Sci-Fi', 'Best Achievement in Sound Editing'],
   },
   {
     director: 'Rian Johnson',
@@ -45,7 +45,15 @@ export const movies = [
     id: '6',
     image: '/movies/grand-budapest-hotel.jpg',
     name: 'The Grand Budapest Hotel',
-    tags: ['Adventure', 'Comedy', 'Crime'],
+    tags: [
+      'Adventure',
+      'Comedy',
+      'Crime',
+      'Best Achievement in Costume Design',
+      'Best Achievement in Makeup and Hairstyling',
+      'Best Achievement in Music Written for Motion Pictures, Original Score',
+      'Best Achievement in Production Design',
+    ],
   },
   {
     director: 'Kenneth Lonergan',
@@ -53,7 +61,11 @@ export const movies = [
     id: '7',
     image: '/movies/manchester-by-the-sea.jpg',
     name: 'Manchester by the Sea',
-    tags: ['Drama'],
+    tags: [
+      'Drama',
+      'Best Performance by an Actor in a Leading Role',
+      'Best Original Screenplay',
+    ],
   },
   {
     director: 'Damien Chazelle',
@@ -61,7 +73,13 @@ export const movies = [
     id: '8',
     image: '/movies/whiplash.jpg',
     name: 'Whiplash',
-    tags: ['Drama', 'Music'],
+    tags: [
+      'Drama',
+      'Music',
+      'Best Performance by an Actor in a Supporting Role',
+      'Best Achievement in Film Editing',
+      'Best Achievement in Sound Mixing',
+    ],
   },
   {
     director: 'Martin McDonagh',
@@ -69,6 +87,12 @@ export const movies = [
     id: '9',
     image: '/movies/three-billboards-outside-ebbing-missouri.jpg',
     name: 'Three Billboards Outside Ebbing, Missouri',
-    tags: ['Comedy', 'Crime', 'Drama'],
+    tags: [
+      'Comedy',
+      'Crime',
+      'Drama',
+      'Best Performance by an Actress in a Leading Role',
+      'Best Performance by an Actor in a Supporting Role',
+    ],
   },
 ];
