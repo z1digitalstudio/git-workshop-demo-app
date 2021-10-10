@@ -25,7 +25,7 @@ export const movies = [
     id: '3',
     image: '/movies/memento.jpg',
     name: 'Memento',
-    releaseDate: parseISO('2020-09-05T00:00:00.000').getTime(),
+    releaseDate: parseISO('2000-09-05T00:00:00.000').getTime(),
     tags: ['Mistery', 'Thriller'],
   },
   {
