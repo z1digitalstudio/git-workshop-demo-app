@@ -1,7 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-import { lastFromArray } from '$/utils/lastFromArray';
-
 export function useTagOverflow({ children }: { children: string[] }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [firstHiddenIndex, setFirstHiddenIndex] = useState(Infinity);
@@ -46,7 +44,9 @@ export function useTagOverflow({ children }: { children: string[] }) {
   );
 
   const totalHidden = children.length - firstHiddenIndex;
-  const moreTagsTitle = lastFromArray(children, totalHidden).join(', ');
+  const moreTagsTitle = children
+    .splice(firstHiddenIndex, children.length)
+    .join(', ');
   const moreTagsLabel = `+ ${totalHidden}`;
 
   return {
