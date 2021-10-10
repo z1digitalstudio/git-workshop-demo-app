@@ -7,7 +7,7 @@ export const movies = [
     id: '1',
     image: '/movies/arrival.jpg',
     name: 'Arrival',
-    releaseDate: parseISO('2016-09-01T00:00:00.000'),
+    releaseDate: parseISO('2016-09-01T00:00:00.000').getTime(),
     tags: ['Drama', 'Sci-Fi', 'Best Achievement in Sound Editing'],
   },
   {
@@ -16,7 +16,7 @@ export const movies = [
     id: '2',
     image: '/movies/knives-out.jpg',
     name: 'Knives Out',
-    releaseDate: parseISO('2019-09-07T00:00:00.000'),
+    releaseDate: parseISO('2019-09-07T00:00:00.000').getTime(),
     tags: ['Comedy', 'Crime', 'Drama'],
   },
   {
@@ -25,7 +25,7 @@ export const movies = [
     id: '3',
     image: '/movies/memento.jpg',
     name: 'Memento',
-    releaseDate: parseISO('2020-09-05T00:00:00.000'),
+    releaseDate: parseISO('2020-09-05T00:00:00.000').getTime(),
     tags: ['Mistery', 'Thriller'],
   },
   {
@@ -34,7 +34,7 @@ export const movies = [
     id: '4',
     image: '/movies/baby-driver.jpg',
     name: 'Baby Driver',
-    releaseDate: parseISO('2017-03-11T00:00:00.000'),
+    releaseDate: parseISO('2017-03-11T00:00:00.000').getTime(),
     tags: ['Action', 'Crime', 'Drama'],
   },
   {
@@ -43,7 +43,7 @@ export const movies = [
     id: '5',
     image: '/movies/lady-bird.jpg',
     name: 'Lady Bird',
-    releaseDate: parseISO('2017-09-01T00:00:00.000'),
+    releaseDate: parseISO('2017-09-01T00:00:00.000').getTime(),
     tags: ['Comedy', 'Drama'],
   },
   {
@@ -52,7 +52,7 @@ export const movies = [
     id: '6',
     image: '/movies/grand-budapest-hotel.jpg',
     name: 'The Grand Budapest Hotel',
-    releaseDate: parseISO('2014-02-06T00:00:00.000'),
+    releaseDate: parseISO('2014-02-06T00:00:00.000').getTime(),
     tags: [
       'Adventure',
       'Comedy',
@@ -69,7 +69,7 @@ export const movies = [
     id: '7',
     image: '/movies/manchester-by-the-sea.jpg',
     name: 'Manchester by the Sea',
-    releaseDate: parseISO('2016-01-23T00:00:00.000'),
+    releaseDate: parseISO('2016-01-23T00:00:00.000').getTime(),
     tags: [
       'Drama',
       'Best Performance by an Actor in a Leading Role',
@@ -82,7 +82,7 @@ export const movies = [
     id: '8',
     image: '/movies/whiplash.jpg',
     name: 'Whiplash',
-    releaseDate: parseISO('2014-01-16T00:00:00.000'),
+    releaseDate: parseISO('2014-01-16T00:00:00.000').getTime(),
     tags: [
       'Drama',
       'Music',
@@ -97,7 +97,7 @@ export const movies = [
     id: '9',
     image: '/movies/three-billboards-outside-ebbing-missouri.jpg',
     name: 'Three Billboards Outside Ebbing, Missouri',
-    releaseDate: parseISO('2017-09-04T00:00:00.000'),
+    releaseDate: parseISO('2017-09-04T00:00:00.000').getTime(),
     tags: [
       'Comedy',
       'Crime',

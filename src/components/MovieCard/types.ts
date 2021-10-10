@@ -3,6 +3,6 @@ export type Props = {
   directorImage: string;
   image: string;
   name: string;
-  releaseDate: Date;
+  releaseDate: number;
   tags: string[];
 };
