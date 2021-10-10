@@ -30,6 +30,11 @@ export const Title = styled.h2`
   text-overflow: ellipsis;
 `;
 
+export const ReleaseDate = styled.span`
+  font-weight: ${({ theme }) => theme.weights.light};
+  font-size: 0.8rem;
+`;
+
 export const Director = styled.div`
   display: flex;
 `;

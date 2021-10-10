@@ -3358,6 +3358,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"date-fns@npm:^2.25.0":
+  version: 2.25.0
+  resolution: "date-fns@npm:2.25.0"
+  checksum: 8896dc1dde0ee5ef77616942423bfa11fa2017a5ac19457293b7aaedc8822ff94f0a14eaf93da573b09b601dc0149eb430988a046cc9f79a2eb15f8c66c9c50c
+  languageName: node
+  linkType: hard
+
 "debug@npm:2, debug@npm:^2.2.0, debug@npm:^2.3.3, debug@npm:^2.6.9":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -10137,6 +10144,7 @@ typescript@^4.4.3:
     "@z1digitalstudio/eslint-config-imports": ^1.0.0
     babel-loader: ^8.2.2
     babel-plugin-styled-components: "npm:@z1digitalstudio/babel-plugin-styled-components@1.13.2-rev.1"
+    date-fns: ^2.25.0
     eslint: ^7.32.0
     eslint-config-airbnb-base: ^14.2.1
     eslint-config-airbnb-typescript: ^14.0.0
