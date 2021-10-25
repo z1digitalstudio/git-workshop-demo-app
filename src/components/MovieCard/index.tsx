@@ -1,3 +1,5 @@
+import { format } from 'date-fns/fp';
+
 import {
   Container,
   Content,
@@ -7,17 +9,21 @@ import {
   DirectorInfo,
   DirectorName,
   Image,
+  ReleaseDate,
   Title,
 } from './styles';
 import type { Props } from './types';
 
 import Tags from '$/components/Tags';
 
+const formatYear = format('yyyy');
+
 export default function MovieCard({
   director,
   directorImage,
   image,
   name,
+  releaseDate,
   tags,
 }: Props): JSX.Element {
   return (
@@ -25,7 +31,9 @@ export default function MovieCard({
       <Image alt="" src={image} />
       <Content>
         <Tags>{tags}</Tags>
-        <Title title={name}>{name}</Title>
+        <Title title={`${name} (${formatYear(releaseDate)})`}>
+          {name} <ReleaseDate>({formatYear(releaseDate)})</ReleaseDate>
+        </Title>
         <Director>
           <DirectorImage alt="" src={directorImage} />
           <DirectorInfo>
