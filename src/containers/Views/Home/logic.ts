@@ -1,3 +1,5 @@
+import compareDatesAsc from 'date-fns/compareAsc';
+import compareDatesDesc from 'date-fns/compareDesc';
 import { ChangeEvent, useCallback, useState } from 'react';
 
 import type { movies as Movies } from './data';
@@ -32,6 +34,18 @@ const options = [
         .toLocaleLowerCase()
         .localeCompare(a.director.toLocaleLowerCase()),
     value: 'director-name-desc',
+  },
+  {
+    name: 'Release Date (Oldest)',
+    sort: (a: Movie, b: Movie) => compareDatesAsc(a.releaseDate, b.releaseDate),
+    value: 'release-date',
+  },
+  {
+    name: 'Release Date (Newest)',
+    sort(a: Movie, b: Movie) {
+      return compareDatesDesc(a.releaseDate, b.releaseDate);
+    },
+    value: 'release-date-desc',
   },
 ] as const;
 
